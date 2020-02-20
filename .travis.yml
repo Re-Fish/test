@@ -3,5 +3,5 @@ services:
     - docker
 
 script:
-    - docker build -t refish/node .
-    - docker images refish/node
+    - docker build -t re-fish/node .
+    - docker images re-fish/node
