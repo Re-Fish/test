@@ -5,3 +5,12 @@ services:
 script:
     - docker build -t re-fish/node .
     - docker images re-fish/node
+
+befor_deploy:
+    - docker login -u refish -p Hastings03
+
+deploy:
+    provider: script
+    script: docker push re-fish/node
+    on:
+        branch: master
