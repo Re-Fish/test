@@ -6,7 +6,7 @@ script:
     - docker build -t re-fish/node .
     - docker images re-fish/node
 
-befor_deploy:
+before_deploy:
     - docker login -u refish -p Hastings03
 
 deploy:
